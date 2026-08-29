@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-19</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <navbar>
+        <div class="logo">Logo</div>
+
+        <div class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About US</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </div>
+
+        <div class="username">
+          <button>Username</button>
+          <button class="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+        </div>
+      </navbar>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box-left">
+          <div class="added-items">
+             <h3>Added Items</h3>
+             <p>No items have been added</p>
+          </div>
+          
+
+          <div class="box-bottom">
+            <h4>Book Now</h4>
+
+            <form id="booking-form">
+
+            <div class="name-box">
+              <label for="name">Full Name:</label>
+              <br />
+              <input type="text" placeholder="John Doe" />
+            </div>
+
+            <div class="email-box">
+              <label for="email">Email ID:</label>
+              <br />
+              <input type="email" id="email" placeholder="john.doe@example.com" />
+            </div>
+
+            <!-- Password Field Added -->
+             <div class="password-box">
+              <label for="password">Password:</label>
+              <br />
+
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password" />
+             </div>
+
+            <div class="contact-box">
+              <label for="contact">Contact No.:</label>
+              <br />
+              <input type="tel" 
+              id="contact"
+              placeholder="123-456-7890" />
+            </div>
+
+            <div class="booknow">
+              <button type="submit">Book Now</button>
+            </div>
+          </form>
+
+            <div class="total-amount">
+              <h4>Total Amount: ₹0</h4>
+              <p>₹0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-right">
+          <h3>Browse Our Services</h3>
+          <p>
+            Click on add to cart button to add the services to your cart or
+            press skip.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
